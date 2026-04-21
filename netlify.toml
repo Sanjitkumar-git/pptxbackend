@@ -5,3 +5,9 @@
   from = "/api/generate-pptx"
   to = "/.netlify/functions/generate-pptx"
   status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
